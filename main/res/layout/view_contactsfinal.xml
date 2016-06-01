@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabSome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_add_black_18dp"
+        fab:fab_colorNormal="@color/White"
+        fab:fab_colorPressed="@color/Purple"
+        fab:fab_colorRipple="@color/colorAccent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:onClick="ShowAllContacts"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabAddAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_archive_black_18dp"
+        fab:fab_colorNormal="@color/White"
+        fab:fab_colorPressed="@color/Purple"
+        fab:fab_colorRipple="@color/colorAccent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="77dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="191dp"
+        android:onClick="AddAllContacts" />
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_clear_black_18dp"
+        fab:fab_colorNormal="@color/White"
+        fab:fab_colorPressed="@color/Purple"
+        fab:fab_colorRipple="@color/colorAccent"
+        android:visibility="invisible"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="111dp"
+        android:onClick="RemoveAllContacts"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/currentlistviewsend"
+        android:layout_marginBottom="50dp"
+        android:dividerHeight="-1dp"/>
+
+
+</RelativeLayout>
